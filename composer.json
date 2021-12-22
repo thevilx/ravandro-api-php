@@ -1,0 +1,21 @@
+{
+    "name": "thevil/ravandro-api",
+    "description": "Get The latest Records of Tehran Stock Exchange",
+    "type": "library",
+    "require": {
+        "guzzlehttp/guzzle": "7.4.x-dev"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Thevil\\RavandroApi\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mohamad Amin Mirzaei",
+            "email": "amin.mir1380@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
