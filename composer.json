@@ -3,7 +3,9 @@
     "description": "Get The latest Records of Tehran Stock Exchange",
     "type": "library",
     "require": {
-        "guzzlehttp/guzzle": "7.4.*"
+        "guzzlehttp/guzzle": "^7.0.1",
+        "php": "^7.3|^8.0"
+        
     },
     "license": "MIT",
     "autoload": {
