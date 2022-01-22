@@ -7,7 +7,7 @@ use Thevil\RavandroApi\API;
 
 class RavandroClient extends API{
 
-    protected const BASE_URI = 'localhost:8000';
+    protected const BASE_URI = 'https://www.ravandro.com';
 
   
     protected $key;
