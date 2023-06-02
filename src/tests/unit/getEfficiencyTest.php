@@ -10,7 +10,7 @@ class getEfficiencyTest extends TestCase
 
     public function setUp(): void
     {
-        $this->client = new RavandroClient("13|tk6FsfjViQ9Gwm8Md9j9GSapYFCwhJaMjZL3t73S");
+        $this->client = new RavandroClient("p6wGHqgnCj97XcqNcY7SKIkEP2bO03NrhRtdWOkk");
     }
 
     public function test_only_symbol()
@@ -29,7 +29,8 @@ class getEfficiencyTest extends TestCase
 
     public function test_no_option_entered(){
         try {
-           $this->client->getEfficiency();
+           $data = $this->client->getEfficiency();
+            $this->assertIsArray($data['شستا']);
         } catch (\Exception $e) {
             $this->assertSame('symbol_name and period cant be both undefined !',$e->getMessage());
         }

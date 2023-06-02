@@ -7,7 +7,7 @@ class getLatestPriceTest extends TestCase{
     private $client;
 
     public function setUp():void{
-        $this->client = new RavandroClient("13|tk6EKnsjViQ7sGwm8MK9j9GbsYFCwhaMjL3zt73S");
+        $this->client = new RavandroClient("p6wGHqgnCj97XcqNcY7SKIkEP2bO03NrhRtdWOkk");
     }
 
     public function testSingleSymbol(){
@@ -31,4 +31,5 @@ class getLatestPriceTest extends TestCase{
             $this->assertSame('{"error":"Symbol Name Not Found !"}', $response->getBody()->getContents());
         }
     }
+
 }

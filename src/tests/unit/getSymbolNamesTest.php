@@ -10,13 +10,14 @@ class getSymbolNamesTest extends TestCase
 
     public function setUp(): void
     {
-        $this->client = new RavandroClient("13|tk6EKnsjViQ7sGwm8MK9j9GbsYFCwhaMjL3zt73S");
+        $this->client = new RavandroClient("p6wGHqgnCj97XcqNcY7SKIkEP2bO03NrhRtdWOkk");
     }
 
     /**@test */
     public function test_get_symbol_table_data()
     {
-        $data = $this->client->getSymbolNames("شستا");
+        $data = $this->client->getSymbolList();
+
         $this->assertIsArray($data);
         $this->assertTrue(!empty($data));
     }
